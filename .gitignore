@@ -1,0 +1,10 @@
+*.txt
+*.out
+*.o
+*.obj
+*.exe
+
+.idea
+.vscode
+.vs
+.cache
