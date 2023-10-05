@@ -1,14 +1,12 @@
-#define _USE_MATH_DEFINES
-
 #include "functions.h"
 
 
 void write_digits(mpz_t p, mpz_t q, uint64_t digits_count)
 {
-    FILE* fout;
     char filename[64];
     sprintf(filename, "e_%ld_digits.txt", digits_count);
-    fout = fopen(filename, "w");
+    
+    FILE* fout = fopen(filename, "w");
 
     printf("Writing digits to the %s..\n", filename);
 
