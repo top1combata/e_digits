@@ -80,6 +80,7 @@ void evaluate_p_q(mpz_t p, mpz_t q, uint64_t k, uint64_t digits_count)
 
     clock_t start = clock();
     evaluate_p_q_wrap(p, q, 0, k);
+    // 1 + P(0,n)/Q(0,n)
     mpz_add(p, p, q);
 
     printf("Calculated in %.3f seconds!\n\n", (clock()-start)/(double)CLOCKS_PER_SEC);

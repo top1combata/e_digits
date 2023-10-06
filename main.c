@@ -6,7 +6,7 @@ int main(int argc, char** argv)
     if (argc < 2)
     {
         printf("incorrect usage, argumnet must be a number of digits\n");
-	return 1;
+	    return 1;
     }
     
     uint64_t digits_count = strtoull(argv[1], NULL, 10); 
